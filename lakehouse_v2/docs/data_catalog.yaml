@@ -1,0 +1,34 @@
+
+    monthly_revenue:
+      source: gold.sales_fact
+      type: aggregate
+      grain: month
+      description: "Month-over-month revenue with growth rate"
+      filters: "status = 'completed'"
+      metrics:
+        orders: "COUNT(DISTINCT order_id)"
+        revenue: "ROUND(SUM(net_amount), 2)"
+        revenue_prev_month: "LAG(revenue) OVER (ORDER BY year, month)"
+        mom_growth_pct: "ROUND((revenue - revenue_prev_month) / revenue_prev_month * 100, 2)"
+
+    returns_analysis:
+      source: gold.sales_fact
+      type: aggregate
+      grain: category
+      description: "Return rate and lost revenue by product category"
+      metrics:
+        total_orders: "COUNT(DISTINCT order_id)"
+        returned_orders: "COUNT(DISTINCT order_id) WHERE status='returned'"
+        return_rate_pct: "returned_orders / total_orders * 100"
+        returned_revenue: "SUM(net_amount) WHERE status='returned'"
+
+    channel_performance:
+      source: gold.sales_fact
+      type: aggregate
+      grain: channel
+      description: "Revenue and order volume split by sales channel"
+      filters: "status = 'completed'"
+      metrics:
+        orders: "COUNT(DISTINCT order_id)"
+        revenue: "ROUND(SUM(net_amount), 2)"
+        avg_order_value: "ROUND(AVG(net_amount), 2)"

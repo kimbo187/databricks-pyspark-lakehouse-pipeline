@@ -1,0 +1,53 @@
+product_id,product_name,category,list_price
+101,Laptop Stand,Accessories,349.0
+102,Wireless Mouse,Accessories,249.0
+103,Mechanical Keyboard,Accessories,899.0
+104,USB-C Dock,Hardware,1299.0
+105,4K Monitor,Hardware,4999.0
+106,Webcam HD,Accessories,699.0
+107,Noise-Cancelling Headphones,Audio,1899.0
+108,Desk Lamp LED,Furniture,399.0
+109,Ergonomic Chair,Furniture,4599.0
+110,Standing Desk,Furniture,6999.0
+111,Laptop Sleeve,Accessories,299.0
+112,External SSD 1TB,Storage,899.0
+113,USB Hub 7-port,Accessories,349.0
+114,Smartphone Stand,Accessories,149.0
+115,Cable Management Kit,Accessories,199.0
+116,Monitor Arm,Hardware,899.0
+117,Blue Light Glasses,Accessories,449.0
+118,Whiteboard 90x60,Furniture,999.0
+119,Footrest,Furniture,349.0
+120,Air Purifier,Electronics,1499.0
+121,Smart Speaker,Electronics,799.0
+122,Portable Charger 20000mAh,Electronics,499.0
+123,Wireless Charger,Electronics,299.0
+124,Screen Protector,Accessories,99.0
+125,Privacy Screen Filter,Accessories,399.0
+126,Wrist Rest,Accessories,199.0
+127,Cable Organiser,Accessories,149.0
+128,Under-desk Drawer,Furniture,599.0
+129,Desk Mat XL,Accessories,449.0
+130,Laptop Cooling Pad,Accessories,399.0
+131,Bluetooth Keyboard,Accessories,699.0
+132,Presenter Remote,Electronics,349.0
+133,Document Scanner,Hardware,1999.0
+134,Label Maker,Electronics,599.0
+135,Smart Plug 4-pack,Electronics,399.0
+136,Wi-Fi Extender,Hardware,699.0
+137,Surge Protector,Hardware,449.0
+138,Monitor Calibrator,Hardware,2499.0
+139,Drawing Tablet,Electronics,1499.0
+140,Microphone USB,Audio,1299.0
+141,Audio Interface,Audio,1899.0
+142,Studio Monitor Speakers,Audio,3999.0
+143,HDMI Switch,Hardware,349.0
+144,KVM Switch,Hardware,899.0
+145,Docking Station,Hardware,2299.0
+146,Raspberry Pi Kit,Electronics,599.0
+147,Arduino Starter Kit,Electronics,449.0
+148,3D Pen,Electronics,399.0
+149,VR Headset,Electronics,5499.0
+150,Graphic Tablet Large,Electronics,2999.0
+999,Invalid Product,Test,-50.0
+998,Zero Price Product,Test,0.0
